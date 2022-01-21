@@ -6,7 +6,6 @@ class ProductPage(BasePage):
     def add_to_basket(self):
         button = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET)
         button.click()
-        self.solve_quiz_and_get_code()
 
     def should_be_product_add_to_basket(self):
         self.product_added_to_basket()
