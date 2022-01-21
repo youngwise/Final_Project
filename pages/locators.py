@@ -20,4 +20,10 @@ class ProductPageLocators:
 
 class BasePageLocators:
     LOGIN_LINK = (By.ID, "login_link")
+    BASKET = (By.CSS_SELECTOR, '.basket-mini .btn')
+
+
+class BasketPageLocators:
+    ITEMS = (By.CLASS_NAME, 'basket-items')
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, '#content_inner > p')
 
