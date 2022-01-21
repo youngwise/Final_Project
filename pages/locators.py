@@ -1,10 +1,6 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
-    LOGIN_LINK = (By.ID, 'login_link')
-
-
 class LoginPageLocators:
     REGISTER_FORM = (By.ID, 'register_form')
     LOGIN_FORM = (By.ID, 'login_form')
@@ -20,4 +16,9 @@ class ProductPageLocators:
     PRICE_PRODUCT_IN_MESSAGE = (By.CSS_SELECTOR, '.alert-info strong')
 
     MESSAGE_ADD_TO_BASKET = (By.CLASS_NAME, 'alert-success')
+
+
+class BasePageLocators:
+    LOGIN_LINK = (By.ID, "login_link")
+    LOGIN_LINK_INVALID = (By.ID, "login_link_inc")
 
