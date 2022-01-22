@@ -24,13 +24,13 @@ def generator_email_and_password():
      Then we form a string by joining all the characters with join().
     """
 
-    # Генерация случайного кол-ва произвольных букв до '@'
-    # Generating a random number of arbitrary letters up to '@'
-    word_before = choices(ascii_letters, k=int(time() * 1000 % 100//2))
+    # Генерация случайного кол-ва произвольных букв до '@' не меньше 1-го
+    # Generating a random number of arbitrary letters up to '@' at least 1
+    word_before = choices(ascii_letters, k=int(time() * 1000 % 100//2 + 1))
 
-    # Генерация случайного кол-ва произвольных букв после '@'
-    # Generating a random number of arbitrary letters after '@'
-    word_after = choices(ascii_lowercase, k=int(time() * 100000 % 100 // 3))
+    # Генерация случайного кол-ва произвольных букв после '@' не меньше 1-го
+    # Generating a random number of arbitrary letters after '@' at least 1
+    word_after = choices(ascii_lowercase, k=int(time() * 100000 % 100 // 3 + 1))
 
     # Генерация случайного набора букв и цифр, учитывая, что кол-во символов не менее 9
     # Generating a random set of letters and numbers, given that the number of characters is at least 9
