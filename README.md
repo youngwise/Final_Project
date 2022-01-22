@@ -13,7 +13,7 @@
 ```commandline
 pip install -r requirements.txt
 ```
-######Спасибо за внимание!
+###### Спасибо за внимание!
 ***
 # EN: Welcome to my repository!
 This repository is used for doing homework, as well as for practicing the knowledge gained.
@@ -30,4 +30,4 @@ If you have a new virtual environment or libraries are missing, then enter the f
 ```commandline
 pip install -r requirements.txt
 ```
-######Thank you for your attention!
+###### Thank you for your attention!
