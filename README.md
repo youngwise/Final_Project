@@ -7,6 +7,8 @@
 + [pytest](https://pypi.org/project/pytest/)
 + [selenium](https://pypi.org/project/selenium/)
 
+Тесты работают на браузере **Chrome**!
+
 Если у вас новая виртуальная среда или библиотеки отсутсвуют, то введите в cmd следующую команду
 ```commandline
 pip install -r requirements.txt
@@ -21,6 +23,8 @@ Please pay attention! Make sure you have the necessary libraries installed in yo
 virtual environment:
 + [pytest](https://pypi.org/project/pytest/)
 + [selenium](https://pypi.org/project/selenium/)
+
+Tests work on **Chrome** browser!
 
 If you have a new virtual environment or libraries are missing, then enter the following command in cmd
 ```commandline
