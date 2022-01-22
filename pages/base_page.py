@@ -30,10 +30,10 @@ class BasePage:
         try:
             alert = self.browser.switch_to.alert
             alert_text = alert.text
-            print(f"Your code: {alert_text}")
+            print(f"\nYour code: {alert_text}")
             alert.accept()
         except NoAlertPresentException:
-            print("No second alert presented")
+            print("\nNo second alert presented")
 
     def is_not_element_present(self, how, what, timeout=4):
         try:
@@ -58,7 +58,7 @@ class BasePage:
     def should_be_login_link(self):
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), 'Login link isn\'t presented'
 
-    def open_basket(self):
+    def open_the_basket(self):
         basket_link = self.browser.find_element(*BasePageLocators.BASKET)
         basket_link.click()
 
